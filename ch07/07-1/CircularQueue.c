@@ -32,33 +32,34 @@ void Enqueue(Queue *pq, Data data)
 {
     if(NextPosIdx(pq->rear) == pq->front)
     {
-        printf("Queue Memony Error!");
+        printf("Queue Memory Error!!");
         exit(-1);
     }
 
-    pq->rear = NextPosIdx(pq->rear);
-    pq->queArr[pq->rear] = data;
+    pq->rear = NextPosIdx(pq->rear);    //rear를 한 칸 이동
+    pq->queArr[pq->rear] = data;        //rear가 가리키는 곳에 데이터 저장
 }
 
 Data Dequeue(Queue *pq)
 {
     if(QIsEmpty(pq))
     {
-        printf("Queue Memory Error!");
+        printf("Queue Memory Error!!");
         exit(-1);
     }
 
-    pq->front = NextPosIdx(pq->front);
-    return pq->queArr[pq->front];
+    pq->front = NextPosIdx(pq->front);  //front를 한 칸 이동
+    return pq->queArr[pq->front];       //front가 가리키는 데이터 만환
 }
 
 Data QPeek(Queue *pq)
 {
     if(QIsEmpty(pq))
     {
-        printf("Queue Memory Error!");
+        printf("Queue Memory Error!!");
         exit(-1);
     }
 
-    return pq->queArr[NextPosIdx(pq->front)];
+    return pq->queArr[pq->front];
 }
+

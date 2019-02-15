@@ -5,6 +5,7 @@
 #define FALSE 0
 
 #define QUE_LEN 100
+
 typedef int Data;
 
 typedef struct _cQueue
@@ -21,6 +22,7 @@ int QIsEmpty(Queue *pq);
 
 void Enqueue(Queue *pq, Data data);
 Data Dequeue(Queue *pq);
-Data QPeek(Queue *pq);
+Data QPeek(Queue *pqq);
+
 
 #endif
