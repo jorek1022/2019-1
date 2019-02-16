@@ -56,7 +56,7 @@ int main(void)
     printf("Simulation Report! \n");
     printf(" - Cheese burger: %d \n", cheOrder);
     printf(" - Bulgogi burger: %d \n", bulOrder);
-    printf(" - Duoble burger: %d \n", dubOrder);
+    printf(" - Double burger: %d \n", dubOrder);
     printf(" - Waiting room size: %d \n", QUE_LEN);
 
     return 0;
