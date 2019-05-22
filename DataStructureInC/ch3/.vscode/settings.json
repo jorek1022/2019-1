@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "namecard.h": "c",
+        "stdlib.h": "c"
+    }
+}
